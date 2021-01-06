@@ -1,8 +1,8 @@
-ExecBase			= 4
+ExecBase	= 4
 
-OpenLibrary		= -552
+OpenLibrary	= -552
 CloseLibrary	= -414
-PutStr			= -948
+PutStr		= -948
 
 
 			lea.l dosname,a1
@@ -22,7 +22,7 @@ PutStr			= -948
 			jsr CloseLibrary(a6)
 
 nolib		clr.l d0
-			rts
+		rts
 
 dosbase 	dc.l 0
 dosname		dc.b "dos.library",0
