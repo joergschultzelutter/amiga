@@ -13,7 +13,7 @@ PutStr		= -948
 			tst.l d0
 			beq.s nolib
 
-			lea.l helloworld,d1
+			move.l #helloworld,d1
 			move.l d0,a6
 			jsr PutStr(a6)
 
